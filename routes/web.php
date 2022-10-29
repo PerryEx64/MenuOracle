@@ -1,8 +1,8 @@
 <?php
 
+use App\Http\Livewire\ViewTables;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
-use \App\Http\Livewire\TipoPlatillo;
 use \App\Http\Livewire\TipoBebida;
 
 
@@ -38,5 +38,15 @@ Route::get('visualizar',  function () {
     return view('index');
 })->name('visualizar');
 
+Route::get('visualizar/menu', function () {
+    return view('visualizar-menu');
+})->name('visualizar/menu');
 
+Route::get('visualizar/menus', function () {
+    return view('tables');
+})->name('visualizar/menus');
+
+Route::get('visualizar/tables', function () {
+    return view('tables');
+})->name('visualizar/tables');
 

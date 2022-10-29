@@ -1,9 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="blur-lg hero min-h-screen rounded-lg" style="background-image: url(https://api.lorem.space/image/burger?w=1000&h=800);">
+        <div class="col-md-6">
             <div class="card">
                 <div class="card-header">{{ __('Registrarse') }}</div>
 
@@ -71,6 +72,7 @@
                     </form>
                 </div>
             </div>
+        </div>
         </div>
     </div>
 </div>
